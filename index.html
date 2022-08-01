@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <title>Kry008</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A wonderful developer with passion who will create beautiful pages and beautiful applications for you."/>
+    <meta name="author" content="kry008" />
+    <meta name="copyright" content="kry008" />
+    <meta name="robots" content="follow"/>
+    <meta name="Keywords" content="kry008, Programmer, programing">
+    <meta name="twitter:card" content="Programmer with passion"></meta>
+    <meta name="twitter:site" content="@moje555" />
+    <meta name="twitter:creator" content="@kry008" />
+    <meta property="og:title" content="kry008" />
+    <meta property="og:description" content="Programmer with passion" />
+    <meta property="og:image" content="https://kry008.ml/blog/wp-content/uploads/2022/08/image-3.png" />
+</head>
+
+<body oncontextmenu="alert('You can finde source code on Github and blog'); return false;">
+<!--body-->
+    <div id="particles-js"></div>
+    <div id="main">
+        <h1>Kry008</h1>
+        <img src="images/logo.webp" id="logo" alt="logo" width="100px" height="100px">
+        <h2>Programmer with passion</h2>
+        <div id="programinglanguages">
+            <img src="images/js.webp" alt="JS" title="JavaScript">
+            <img src="images/android.webp" alt="Android"  title="Android">
+            <img src="images/php.webp" alt="PHP" title="PHP">
+            <img src="images/nodejs.webp" alt="NodeJS" title="NodeJS">
+            <img src="images/java.webp" alt="Java" title="Java">
+        </div>
+        <div id="buttons">
+            <a href="https://github.com/kry008" target="_blank" title="My GitHub"><i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+            <a href="https://twitter.com/moje555" target="_blank" title="My Twitter account"><i class="fa fa-twitter"></i> Twitter</a>
+            <a style="cursor: pointer;" onclick="f1(); return false;" title="Click to copy"><img src="images/discord.webp" alt="Discord" id="dc"> Discord</a>
+            <a href="blog"><i class="fa fa-globe"></i> Blog</a>
+        </div>
+        <div id="info"></div>
+    </div>
+</body>
+<script src="https://kit.fontawesome.com/791be91bff.js" crossorigin="anonymous"></script>
+<style>
+    *
+    {
+        resize: none;
+    }
+    body{
+        width: 100%;
+        height: 100vh;
+        overflow: hidden !important;
+        margin: 0;
+        font-family: 'Roboto', sans-serif;
+    }
+    #dc
+    {
+        height: 20px;
+    }
+    #particles-js
+    {
+
+        background-color: #000;
+        background-image: url("");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 100vh;
+    }
+    #main
+    {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: white;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 45px rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 15px;
+        text-shadow: 0 0 5px black;
+    }
+    #main h1
+    {
+        font-size: 6em;
+        margin: 0;
+        line-height: 1.4em;
+        z-index: 2;
+    }
+    #main #logo
+    {
+        margin-top:5px;
+    }
+    #main h2
+    {
+        font-size: 1.8em;
+        line-height: 1.2em;
+        margin-top: -5px;
+    }
+    #main #programinglanguages
+    {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+    }
+    #main #programinglanguages img
+    {
+        width: 60px;
+        height: 60px;
+        margin: 0.1em;
+        margin: 10px;
+    }
+    #main #buttons
+    {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        margin: 20px 0 10px 0;
+        justify-items: center;
+    }
+    #main #buttons a
+    {
+        color: white;
+        text-decoration: none;
+        font-size: x-large;
+        transition: all 550ms cubic-bezier(0.77, 0, 0.175, 1);	
+        border: 5px solid white;
+        padding: 5px 15px;
+        border-radius: 25px;
+    }
+    
+    #main #buttons a i
+    {
+        color: white !important;
+    }
+    
+    #main #buttons a:hover
+    {
+        color: #4eade3;
+        text-shadow: 0 0 10px black;
+        transition: all 550ms cubic-bezier(0.77, 0, 0.175, 1);	
+        border: 5px solid #4eade3;
+    }
+    ::selection
+    {
+        background-color: #4eade3 !important;
+        color: white !important;
+    }
+    #info
+    {
+        height: 15px;
+        color: rgb(9, 255, 0);
+    }
+    @media only screen and (max-width: 1000px) {
+            
+        #main h1
+        {
+            font-size: 5em;
+        }
+        #main #buttons a
+        {
+            font-size: 18px;
+            border: 3px solid white;
+            padding: 3px 10px;
+            border-radius: 15px;
+        }
+        #main #programinglanguages img
+        {
+            width: 40px;
+            height: 40px;
+            margin: 0.1em;
+        }
+        #main #buttons a:hover
+        {
+            border: 3px solid #4eade3;
+        }
+        #main #buttons
+        {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        #dc
+        {
+            height: 12px;
+        }
+    }
+    @media only screen and (max-width: 800px) {
+        body
+        {
+            width: 90%;
+            margin: 0 auto;
+            background-color: black;
+            overflow-x: hidden;
+        }
+        #main
+        {
+            width: 99%;
+            text-align: center;
+            color: white;
+            background-color: rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 45px rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 15px;
+            text-shadow: 0 0 5px black;
+        }
+    }
+    @media only screen and (max-width: 1000px) {
+        #main h1
+        {
+            font-size: 3em;
+        }
+    }
+</style>
+
+<script src="particles.js"></script>
+<script src="script.js"></script>
+</html>
