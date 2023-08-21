@@ -3,7 +3,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
   });
   window.onscroll = function () { window.scrollTo(0, 0); };
   function f1() {
-      navigator.clipboard.writeText('k̠̠̄r̲̱̱ȳ̲͞0̲̳̿0̠̳͞8̠̳̳#8914').catch(function(err) {
+      navigator.clipboard.writeText('kry008').catch(function(err) {
           document.getElementById("info").style.color = "rgb(255, 0, 0)";
           console.log('Failed to copy text: ', err);
           return setTimeout(() => {
